@@ -1,0 +1,21 @@
+{
+    "bubbleWidth": 80.0,
+    "bubbleHeight": 80.0,
+    "list": [
+        {
+                "imageTitle": "icon1",
+                "logitude": 4.974558,
+                "latitude": 52.318580
+        },
+        {
+                "imageTitle": "icon2",
+                "logitude": 4.908924,
+                "latitude": 52.386636
+        },
+        {
+                "imageTitle": "icon3",
+                "logitude": 4.895693,
+                "latitude": 52.348687
+        }
+    ]
+}

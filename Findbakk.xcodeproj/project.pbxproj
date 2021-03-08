@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC753DA525F2768F00199967 /* LostInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC753DA425F2768F00199967 /* LostInfoViewModel.swift */; };
 		CC90784A25F17591009210F4 /* FindbakkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90784925F17591009210F4 /* FindbakkApp.swift */; };
-		CC90784C25F17591009210F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90784B25F17591009210F4 /* ContentView.swift */; };
+		CC90784C25F17591009210F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90784B25F17591009210F4 /* MainView.swift */; };
 		CC90784E25F17593009210F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC90784D25F17593009210F4 /* Assets.xcassets */; };
 		CC90785125F17593009210F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC90785025F17593009210F4 /* Preview Assets.xcassets */; };
+		CC90785A25F176E1009210F4 /* GeoInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90785925F176E1009210F4 /* GeoInfoViewModel.swift */; };
+		CCBEF1F925F677EA00E2A428 /* LostInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEF1F825F677EA00E2A428 /* LostInfoCard.swift */; };
+		CCBEF20425F6C16500E2A428 /* ViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBEF20325F6C16500E2A428 /* ViewAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC753DA425F2768F00199967 /* LostInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostInfoViewModel.swift; sourceTree = "<group>"; };
 		CC90784625F17591009210F4 /* Findbakk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Findbakk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC90784925F17591009210F4 /* FindbakkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindbakkApp.swift; sourceTree = "<group>"; };
-		CC90784B25F17591009210F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC90784B25F17591009210F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CC90784D25F17593009210F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC90785025F17593009210F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC90785225F17593009210F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC90785925F176E1009210F4 /* GeoInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoViewModel.swift; sourceTree = "<group>"; };
+		CCBEF1ED25F2860900E2A428 /* bubbles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bubbles.json; sourceTree = "<group>"; };
+		CCBEF1F825F677EA00E2A428 /* LostInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostInfoCard.swift; sourceTree = "<group>"; };
+		CCBEF20325F6C16500E2A428 /* ViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +61,11 @@
 		CC90784825F17591009210F4 /* Findbakk */ = {
 			isa = PBXGroup;
 			children = (
+				CCBEF20225F6C13900E2A428 /* ToolKit */,
+				CCBEF1F225F2D4A000E2A428 /* Views */,
+				CCBEF1E225F27FE700E2A428 /* Resource */,
+				CC90785D25F17715009210F4 /* Models */,
 				CC90784925F17591009210F4 /* FindbakkApp.swift */,
-				CC90784B25F17591009210F4 /* ContentView.swift */,
 				CC90784D25F17593009210F4 /* Assets.xcassets */,
 				CC90785225F17593009210F4 /* Info.plist */,
 				CC90784F25F17593009210F4 /* Preview Content */,
@@ -67,6 +79,40 @@
 				CC90785025F17593009210F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC90785D25F17715009210F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC90785925F176E1009210F4 /* GeoInfoViewModel.swift */,
+				CC753DA425F2768F00199967 /* LostInfoViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCBEF1E225F27FE700E2A428 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CCBEF1ED25F2860900E2A428 /* bubbles.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CCBEF1F225F2D4A000E2A428 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC90784B25F17591009210F4 /* MainView.swift */,
+				CCBEF1F825F677EA00E2A428 /* LostInfoCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCBEF20225F6C13900E2A428 /* ToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				CCBEF20325F6C16500E2A428 /* ViewAnimation.swift */,
+			);
+			path = ToolKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC90784C25F17591009210F4 /* ContentView.swift in Sources */,
+				CCBEF1F925F677EA00E2A428 /* LostInfoCard.swift in Sources */,
+				CC753DA525F2768F00199967 /* LostInfoViewModel.swift in Sources */,
+				CC90785A25F176E1009210F4 /* GeoInfoViewModel.swift in Sources */,
+				CCBEF20425F6C16500E2A428 /* ViewAnimation.swift in Sources */,
+				CC90784C25F17591009210F4 /* MainView.swift in Sources */,
 				CC90784A25F17591009210F4 /* FindbakkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
